@@ -1,0 +1,49 @@
+.collapse-widget {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.collapse-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  background: #f8f9fa;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.collapse-header:hover {
+  background: #e9ecef;
+}
+
+.collapse-arrow {
+  font-size: 14px;
+  color: #888;
+  transition: transform 0.3s;
+}
+
+.collapse-widget.open .collapse-arrow {
+  color: #2980b9;
+}
+
+.collapse-body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.collapse-content {
+  padding: 16px 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+}
